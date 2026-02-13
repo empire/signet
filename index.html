@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signet Wallet Login</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
+      button { margin-right: .5rem; margin-bottom: .5rem; }
+      #register-panel { margin-top: 1rem; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; display: none; }
+      #status { background: #f7f7f7; padding: .75rem; border-radius: 6px; white-space: pre-wrap; }
+      input { padding: .5rem; margin-right: .5rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Signet Passwordless Sign-In</h1>
+    <button id="connect-btn">Connect Wallet</button>
+    <button id="signin-btn">Sign In</button>
+
+    <p><strong>Wallet:</strong> <span id="wallet">Not connected</span></p>
+    <div id="status">Ready.</div>
+
+    <div id="register-panel">
+      <h3>User not found — register</h3>
+      <input id="username-input" type="text" placeholder="Enter username" />
+      <button id="register-btn">Encrypt + Register</button>
+    </div>
+
+    <script type="module" src="/ui.ts"></script>
+  </body>
+</html>

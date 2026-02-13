@@ -1,0 +1,19 @@
+{
+  "name": "signet-auth-example",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx vite --host",
+    "test": "npx vitest run",
+    "test:watch": "npx vitest"
+  },
+  "dependencies": {
+    "ethers": "^6.13.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
